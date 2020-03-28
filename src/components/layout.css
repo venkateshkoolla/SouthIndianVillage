@@ -4,6 +4,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
+  /* background-color: #889933; */
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -332,7 +333,7 @@ hgroup {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
-ul {
+/* ul {
   margin-left: 1.45rem;
   margin-right: 0;
   margin-top: 0;
@@ -343,6 +344,14 @@ ul {
   margin-bottom: 1.45rem;
   list-style-position: outside;
   list-style-image: none;
+} */
+ul {
+  list-style-type: none;
+  /* margin-left: 550; */
+  padding: 0;
+   overflow: hidden;
+  background-color: #889933;
+  text-align: right;
 }
 ol {
   margin-left: 1.45rem;
@@ -508,14 +517,23 @@ dt {
 th {
   font-weight: bold;
 }
-li {
+/* li {
   margin-bottom: calc(1.45rem / 2);
-}
+  float: left;
+  background-position: 100% .4em;
+  padding-right: .6em;
+ 
+} */
 ol li {
   padding-left: 0;
 }
 ul li {
-  padding-left: 0;
+  margin-bottom: calc(1.45rem / 2);
+  float: left;
+  background-position: 100% .4em;
+  padding-right: 5px;
+  margin-left: 100px;
+  margin: 2px;
 }
 li > ol {
   margin-left: 1.45rem;
@@ -527,6 +545,15 @@ li > ul {
   margin-bottom: calc(1.45rem / 2);
   margin-top: calc(1.45rem / 2);
 }
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  /* text-decoration: none; */
+}
+
 blockquote *:last-child {
   margin-bottom: 0;
 }

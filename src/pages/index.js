@@ -1,20 +1,49 @@
 import React from "react"
 import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import StyledBackgroundSection from "../components/background"
+import styled from 'styled-components'
+
+import {
+  StyledContentWrapperLeft,
+  StyledImageWrapper,
+  StyledLink,
+  StyledWrapper,
+} from '../components/SharedStyledComponents'
 
 const IndexPage = () => (
   <Layout>
+  {/* <StyledBackgroundSection>
+  <StyledWrapper>
+  <StyledContentWrapperLeft> */}
+  {/* <StyledImageWrapper> */}
+    <div> 
+    {/* <p>
+              Welcome to the <code>gatsby-background-image/src</code> test site.
+            </p>  */}
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+      <div style={{maxWidth: `800px`, wordSpacing: `100px` , padding: `10px`}}>
+        <ul>
+          <li><Link to="/" >Home</Link></li>
+          <li><Link to="/about/" >About</Link></li>
+          <li><Link to="/menu/">Menu</Link></li>
+          <li><Link to="/packages/">Packages</Link></li>
+          <li><Link to="/contact/">Contact</Link></li>
+        </ul>
+      
+      </div> 
+    <div style={{ maxWidth: `800px`, marginBottom: `1.45rem` }}>
       <Image />
+    </div>  
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    {/* </StyledImageWrapper> */}
+    <StyledImageWrapper>
+            </StyledImageWrapper>
+    {/* </StyledContentWrapperLeft>
+    </StyledWrapper>
+</StyledBackgroundSection> */}
   </Layout>
 )
 
