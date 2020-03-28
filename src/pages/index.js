@@ -19,16 +19,19 @@ const IndexPage = () => (
   <StyledWrapper>
   <StyledContentWrapperLeft> */}
   {/* <StyledImageWrapper> */}
-    <div> 
-    {/* <p>
-              Welcome to the <code>gatsby-background-image/src</code> test site.
-            </p>  */}
+    <div class = "navbar" > 
     <SEO title="Home" />
-      <div style={{maxWidth: `800px`, wordSpacing: `100px` , padding: `10px`}}>
+      <div >
         <ul>
           <li><Link to="/" >Home</Link></li>
           <li><Link to="/about/" >About</Link></li>
-          <li><Link to="/menu/">Menu</Link></li>
+          <div class="subnav">
+          <button class="subnav-link"><Link to="/Menu/" >Menu</Link> <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content" >
+                <Link to="/tiffinservice/">Tiffin service</Link>
+                <Link to="/catering/">Catering</Link>
+            </div>
+        </div>
           <li><Link to="/packages/">Packages</Link></li>
           <li><Link to="/contact/">Contact</Link></li>
         </ul>
