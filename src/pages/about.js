@@ -10,15 +10,6 @@ import { relative } from "upath"
 const AboutPage = () => (
     <Layout>
       <SEO title="About" />
-      <div style={{maxWidth: `800px`, wordSpacing: `100px` , padding: `10px`}}>
-      <ul>
-      <li><Link to="/" >Home</Link></li>
-      <li><Link to="/about/" >About</Link></li>
-      <li><Link to="/menu/">Menu</Link></li>
-      <li><Link to="/packages/">Packages</Link></li>
-      <li><Link to="/contact/">Contact</Link></li>
-    </ul>     
-      </div>
       
       {/* <p>Welcome to your new Gatsby site.</p> */}
       {/* <p>Now go build something great.</p> */}

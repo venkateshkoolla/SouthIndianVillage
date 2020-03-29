@@ -52,7 +52,7 @@ a:hover {
 .navbar {
   overflow: hidden;
   background-color: #333; 
-  width: 800px;
+  max-width: 800px;
   padding : 10px
 }
 
@@ -64,13 +64,11 @@ a:hover {
   padding: 14px 16px;
   text-decoration: none;
 }
-
-.subnav {
+.sub-nav{
   float: left;
-  overflow: hidden;
+  overflow: auto;
 }
-
-.subnav .subnav-link {
+.sub-nav .sub-nav-btn {
   font-size: 16px;  
   border: none;
   outline: none;
@@ -81,31 +79,38 @@ a:hover {
   margin: 0;
 }
 
-.navbar link:hover, .subnav:hover .subnav-link {
-  background-color: red;
+.navbar link:hover, .sub-nav:hover .sub-nav-btn {
+  background-color: white;
 }
 
-.subnav-content {
-  display: block;
+.sub-nav-content {
+  display: none;
   position: absolute;
-  left: 0;
-  background-color: red;
-  width: 100%;
+  background-color: white;
+    width: 100px;
   z-index: 1;
+   
 }
 
-.subnav-content a {
+@font-face {
+  font-family: myFirstFont;
+  src: url("../bakery.ttf");
+}
+
+.sub-nav-content a {
   float: left;
-  color: white;
+  
+  color: #f5a442;
   text-decoration: none;
+  text-decoration-color: #f5ce42;
 }
 
-.subnav-content link:hover {
-  background-color: #eee;
-  color: black;
+.sub-nav-content link:hover {
+  background-color: white;
+  color: white;
 }
 
-.subnav:hover .subnav-content {
+.sub-nav:hover .sub-nav-content {
   display: block;
 }
 
@@ -402,6 +407,7 @@ ul {
    overflow: hidden;
   background-color: #889933;
   text-align: right;
+  max-width: 100%;
 }
 ol {
   margin-left: 1.45rem;
