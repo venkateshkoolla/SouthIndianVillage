@@ -16,7 +16,7 @@ import Img from "gatsby-image"
 const TiffinServiceImage = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "SouthIndianVillage.jpg" }) {
+      placeholderImage: file(relativePath: { eq: "SouthIndianVillageNew.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid

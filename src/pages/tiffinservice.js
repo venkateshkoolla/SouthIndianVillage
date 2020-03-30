@@ -5,15 +5,16 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import TiffinServiceImage from "../components/tiffinserviceimage"
+import { relative } from "upath"
 
 const ContactPage = () => (
     <Layout>
     <div class = "navbar" > 
       <SEO title="Tiffin service" />
       
-      {/* <p>Welcome to your new Gatsby site.</p> */}
-      {/* <p>Now go build something great.</p> */}
-      <div style={{ maxWidth: `800px`, marginBottom: `1.45rem` }}>
+      <div id = "title-wrapper" color = "#fff"  style = {{fontFamily: `serif`,fontSize:`74px`, padding: `100px`, textAlign: "center", position: relative }}>
+        Tiffin services</div>
+      <div style={{ maxWidth: `600px`, padding:`20px`, marginLeft:`3rem`, marginRight:`1.45rem`, marginBottom: `1.45rem` }}>
        <TiffinServiceImage/>       
       </div>
       </div>
