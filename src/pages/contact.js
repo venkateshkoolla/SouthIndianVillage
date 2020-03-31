@@ -25,7 +25,7 @@ const ContactPage = () => (
             style = {{ borderColor:`red`, border:`4px solid`,
              fontFamily: `serif`, fontsize: `20px`, position:`relative` , display: `table`, tablelayout :`relative`, padding: `25px`}} >
               <div>
-              <form action = "/contact.js" method ="post">
+              <form name = "contact" method ="post" data-netlify="true">
                 <div id = "form-group">
                   <div id = "name">
                     <div id = "username-symbol">
