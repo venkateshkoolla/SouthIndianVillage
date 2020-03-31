@@ -10,13 +10,11 @@ import { relative } from "upath"
 const AboutPage = () => (
     <Layout>
       <SEO title="About" />
-      
-      {/* <p>Welcome to your new Gatsby site.</p> */}
-      {/* <p>Now go build something great.</p> */}
       <div id = "divAbout"  style={{ paddingRight: `15px`, paddingLeft: `15px`, marginRight: auto, marginLeft:auto, maxWidth: `800px`, marginBottom: `1.0rem`}} >
-        <div id = "title-wrapper" color = "#fff"  style = {{fontFamily: `serif`,fontSize:`74px`, padding: `140px`, textAlign: "center", position: relative }}>
+        <div id = "title-wrapper" color = "#fff"  style = {{fontFamily: `serif`,fontSize:`74px`, paddingTop: `140px`, textAlign: "center", position: relative }}>
         ABOUT</div>
-        <div id = "caption" style = {{fontFamily: `serif`,fontSize:`30px`, padding: `140px`, textAlign: "center", position: relative }} >A Complete healthy balanced diet</div>
+        <div id = "caption" style = {{fontFamily: `serif`,fontSize:`30px`, paddingTop: `50px`, textAlign: "center", position: relative }} >
+        A Complete healthy balanced diet</div>
         <div id = "divStory"  style={{ paddingRight: `15px`, paddingLeft: `15px`, marginRight: auto, marginLeft:auto, maxWidth: `800px`, marginBottom: `1.45rem`}} >
         <div id = "title-wrapper" color = "#fff"  style = {{fontFamily: `serif`,fontSize:`74px`, padding: `140px`, textAlign: "center", position: relative }}>
         Our Story
