@@ -87,8 +87,9 @@ a:hover {
   display: none;
   position: absolute;
   background-color: white;
-    width: 100px;
+  width: auto;
   z-index: 1;
+  padding : 10px;
    
 }
 
@@ -98,16 +99,19 @@ a:hover {
 }
 
 .sub-nav-content a {
-  float: left;
-  
+  float: right;  
   color: #f5a442;
+  text-align: left;
   text-decoration: none;
   text-decoration-color: #f5ce42;
+  width: 100%;
 }
 
 .sub-nav-content link:hover {
   background-color: white;
   color: white;
+  display : block;
+
 }
 
 .sub-nav:hover .sub-nav-content {

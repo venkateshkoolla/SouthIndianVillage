@@ -31,14 +31,14 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div style={{margin: `0 auto`, maxWidth: `800px`,  padding: `0 1.0875rem 1.45rem`, color: '#f5ce42', fontFamily: `myFirstFont`, fontSize: `25px` }}>
+      <div style={{margin: `0 auto`, maxWidth: `800px`,  padding: `0 1.0875rem 1.45rem`, color: '#f5ce42', fontFamily: `'Merriweather Sans','sans-serif'`, fontSize: `20px` }}>
       {/* <div > */}
       <div className = "navbar">
         <ul>
           <li><Link to="/" >Home</Link></li>
           <li><Link to="/about/" >About</Link></li>
           <div class="sub-nav">
-          <button class="sub-nav-btn"><Link to="/Menu/" >Menu</Link> <i class="fa fa-caret-down"></i></button>
+          <button class="sub-nav-btn"><Link to="/" >Menu</Link> </button>
             <div class="sub-nav-content" >
                 <Link to="/tiffinservice/">Tiffin service</Link>
                 <Link to="/catering/">Catering</Link>
@@ -47,14 +47,7 @@ const Layout = ({ children }) => {
           <li><Link to="/packages/">Packages</Link></li>
           <li><Link to="/contact/">Contact</Link></li>
         </ul>   
-      {/* </div>  */}
-        <main>{children}</main>
-        {/* <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer> */}
-        
+        <main>{children}</main>       
       </div>
       </div>   
 <Footer siteTitle={data.site.siteMetadata.title}/>
