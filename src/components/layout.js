@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
       <div style={{margin: `0 auto`, maxWidth: `800px`,  padding: `0 1.0875rem 1.45rem`, color: '#f5ce42', fontFamily: `'Merriweather Sans','sans-serif'`, fontSize: `20px` }}>
       {/* <div > */}
       <div className = "navbar">
-        <ul>
+        <ul class = "ul-navbar">
           <li><Link to="/" >Home</Link></li>
           <li><Link to="/about/" >About</Link></li>
           <div class="sub-nav">

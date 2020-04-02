@@ -404,15 +404,34 @@ hgroup {
   margin-bottom: 1.45rem;
 }
 
-ul {
+.ul-navbar {
   list-style-type: none;
-  /* margin-left: 550; */
   padding: 0;
-   overflow: hidden;
+  overflow: hidden;
   background-color: #889933;
   text-align: right;
   max-width: 100%;
 }
+
+.ul-bullets{
+  padding : 0;
+  margin : 50px;
+  list-style-type: disc;
+  color: white;
+  display : inline-block;
+  padding: 0%;
+  vertical-align: top;
+}
+
+.li-bullets{
+  float : left;
+  margin-left: 25Px;
+  position: relative;
+  /* display: inline-block; */
+  /* list-style-type: inline-block; */
+  /* display: inline-block; */
+}
+
 ol {
   margin-left: 1.45rem;
   margin-right: 0;
