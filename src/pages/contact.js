@@ -27,26 +27,19 @@ const ContactPage = () => (
               <div>
               <form name = "contact" method ="post" data-netlify="true">
                 <div id = "form-group">
-                  <div id = "name">
-                    <div id = "username-symbol">
-                      <i>Name:</i>
+                  <div>
+                    <div id = "name">
+                      <span>
+                        <input type ="text" name = "username" placeholder = "Name"  required = "true"/>
+                      </span>
                     </div>
-                    <span>
-                      <input type ="text" name = "username" placeholder = "Name"  required = "true"/>
-                    </span>
                   </div>
                   <div id = "email">
-                    <div id = "email-symbol">
-                      <i>Email:</i>
-                    </div>
                     <span>
                       <input type ="text" name = "Email" placeholder = "Email" required = "true" />
                     </span>
                   </div>
                   <div id = "phonenumber">
-                    <div id = "phone-symbol">
-                      <i>PhoneNumber:</i>
-                    </div>
                     <span>
                       <input type ="text" placeholder = "phone number" name = "Phone number" required = "true" />
                     </span>
@@ -67,7 +60,7 @@ const ContactPage = () => (
           </div>
           </div>
           </div>
-          <div id ="right-container" style = {{display : `table-cell`, paddingLeft:`60px` }}>
+          <div id ="right-container" style = {{display : `table-cell`,  position : relative }}>
             <div style = {{borderColor: `red`, position : `relative` , display: `table` ,fontFamily: `serif`, fontSize: `40px`, marginBottom: `50px`}}>
               <span>Contact Info!</span>
             </div>

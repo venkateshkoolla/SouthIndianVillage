@@ -34,7 +34,7 @@ const AboutPage = () => (
         
 
         <div id = "divStory"  style={{ marginRight: auto, padding : `30px`, marginLeft:auto, marginTop : `25px`, maxWidth: `800px`, marginBottom: `1.0rem`}} >
-        <div id = "title-wrapper" color = "#fff"  style = {{fontFamily: `serif`,fontSize:`50px`, paddingLeft: `5%`, textAlign: "center", position: relative }}>
+        <div id = "title-wrapper" class = "title-font" color = "#fff"  style = {{fontFamily: `serif`, paddingLeft: `5%`, textAlign: "center", position: relative }}>
         Our Story
         </div>
         <div id = "title-wrapper" color = "#fff"  style = {{fontFamily: `serif`,fontSize:`20px`, textAlign: "left", position: relative, marginTop : `80px`,}}>
