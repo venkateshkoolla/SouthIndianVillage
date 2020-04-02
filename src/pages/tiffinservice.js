@@ -12,7 +12,7 @@ const ContactPage = () => (
     <div class = "navbar" > 
       <SEO title="Tiffin service" />
       
-      <div id = "title-wrapper" color = "#fff"  style = {{fontFamily: `serif`,fontSize:`74px`, padding: `100px`, textAlign: "center", position: relative }}>
+      <div id = "title-wrapper" class = "title-font" color = "#fff"  style = {{fontFamily: `serif`, padding: `50px`, textAlign: "center", position: relative }}>
         Tiffin services</div>
       <div style={{ maxWidth: `600px`, padding:`20px`, marginLeft:`3rem`, marginRight:`1.45rem`, marginBottom: `1.45rem` }}>
        <TiffinServiceImage/>       

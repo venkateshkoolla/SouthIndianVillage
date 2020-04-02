@@ -11,7 +11,7 @@ const AboutPage = () => (
     <Layout>
       <SEO title="About" />
       <div id = "divAbout"  style={{ paddingRight: `15px`, paddingLeft: `15px`, marginLeft:auto, marginRight: auto, marginLeft:auto, maxWidth: `800px`, marginBottom: `1.0rem`}} >
-        <div id = "title-wrapper" color = "#fff"  style = {{fontFamily: `serif`,fontSize:`65px`, paddingTop: `140px`, textAlign: "center", position: relative }}>
+        <div id = "title-wrapper" color = "#fff"  style = {{fontFamily: `serif`,fontSize:`65px`, padding: `50px`, textAlign: "center", position: relative }}>
         ABOUT</div>
         <div id = "caption" style = {{fontFamily: `serif`,fontSize:`20px`, paddingTop: `50px`, textAlign: "center", position: relative }} >
         zero preservatives, zero frozen, zero toxic</div>

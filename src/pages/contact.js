@@ -10,8 +10,8 @@ import { relative } from "upath"
 const ContactPage = () => (
     <Layout>
       <SEO title="Contact" /> 
-      <div id = "divAbout"  style={{ paddingRight: `15px`, paddingLeft: `15px`, marginRight: auto, marginLeft:auto, maxWidth: `800px`, marginBottom: `1.0rem`}} >
-        <div id = "title-wrapper" color = "#fff"  style = {{fontFamily: `serif`,fontSize:`74px`, padding: `50px`, textAlign: "center", position: relative }}>
+      <div id = "divContact"  style={{ paddingRight: `15px`, paddingLeft: `15px`, marginRight: auto, marginLeft:auto, maxWidth: `800px`, marginBottom: `1.0rem`}} >
+        <div id = "title-wrapper" class = "title-font" color = "#fff"  style = {{fontFamily: `serif`, padding: `100px`, textAlign: "center", position: relative }}>
         Contact us</div>
         <div id = "caption" style = {{fontFamily: `serif`,fontSize:`20px`,  textAlign: "center", position: relative }} >
         Let us know any concerns or feedback</div>
