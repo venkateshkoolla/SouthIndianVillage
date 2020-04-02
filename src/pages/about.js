@@ -33,11 +33,11 @@ const AboutPage = () => (
         </div>
         
 
-        <div id = "divStory"  style={{ marginRight: auto, padding : `100px`, marginLeft:auto, maxWidth: `800px`, marginBottom: `1.0rem`}} >
-        <div id = "title-wrapper" color = "#fff"  style = {{fontFamily: `serif`,fontSize:`50px`, padding: `50px`, textAlign: "center", position: relative }}>
+        <div id = "divStory"  style={{ marginRight: auto, padding : `30px`, marginLeft:auto, marginTop : `25px`, maxWidth: `800px`, marginBottom: `1.0rem`}} >
+        <div id = "title-wrapper" color = "#fff"  style = {{fontFamily: `serif`,fontSize:`50px`, paddingLeft: `5%`, textAlign: "center", position: relative }}>
         Our Story
         </div>
-        <div id = "title-wrapper" color = "#fff"  style = {{fontFamily: `serif`,fontSize:`20px`, textAlign: "left", position: relative }}>
+        <div id = "title-wrapper" color = "#fff"  style = {{fontFamily: `serif`,fontSize:`20px`, textAlign: "left", position: relative, marginTop : `80px`,}}>
         We are inspired by a indian traditional culture where food it self is everything. Our mission is to to serve high end quality, 
         hygiene and balanced diet in GTA. We are very unique in providing very old balanced diet like our most famous ragi muddha, ragi roti,
         Jowar roti, and ancient grain millet recipes .<br></br>

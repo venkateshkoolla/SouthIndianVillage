@@ -79,6 +79,16 @@ a:hover {
   margin: 0;
 }
 
+.title-font{
+  font-size: 10vw;
+  text-align: center;
+}
+
+@media screen and (min-width: 900px) {
+  .title-font {
+     font-size: 100px;
+  }
+}
 .navbar link:hover, .sub-nav:hover .sub-nav-btn {
   background-color: white;
 }
@@ -414,7 +424,7 @@ hgroup {
 }
 
 .ul-bullets{
-  margin : auto;
+  margin : 30px;
   list-style-type: disc;
   color: white;
   display : inline-block;
