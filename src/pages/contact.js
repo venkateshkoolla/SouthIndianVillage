@@ -11,9 +11,9 @@ const ContactPage = () => (
     <Layout>
       <SEO title="Contact" /> 
       <div id = "divContact"  style={{ paddingRight: `15px`, paddingLeft: `15px`, marginRight: auto, marginLeft:auto, maxWidth: `800px`, marginBottom: `1.0rem`}} >
-        <div id = "title-wrapper" class = "title-font" color = "#fff"  style = {{fontFamily: `serif`, padding: `100px`, textAlign: "center", position: relative }}>
+        <div id = "title-wrapper" class = "title-font" color = "#fff"  style = {{fontFamily: `serif`, paddingTop: `100px`, textAlign: "center", position: relative }}>
         Contact us</div>
-        <div id = "caption" style = {{fontFamily: `serif`,fontSize:`20px`,  textAlign: "center", position: relative }} >
+        <div id = "caption" style = {{fontFamily: `serif`,fontSize:`20px`,paddingTop: `50px`,  textAlign: "center", position: relative }} >
         Let us know any concerns or feedback</div>
         <div id= "ContactContainer"  style={{ margin: `0 auto`, maxWidth: 800, marginTop : `250Px`}}>
           <div id ="left-container" style = {{display : `table-cell`, }}>

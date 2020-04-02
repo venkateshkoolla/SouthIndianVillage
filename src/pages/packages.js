@@ -13,7 +13,7 @@ const PackagesPage = () => (
      
       <div id = "divAbout"  style={{ paddingRight: `15px`, paddingLeft: `15px`, marginRight: auto, marginLeft:auto, maxWidth: `800px`, marginBottom: `1.0rem`}} >      
         
-      <div id = "title-wrapper" color = "#fff"  style = {{fontFamily: `serif`,fontSize:`65px`, paddingTop: `140px`, textAlign: "center", position: relative }}>
+      <div id = "title-wrapper" class = "title-font" color = "#fff"  style = {{fontFamily: `serif`, paddingTop: `100px`, textAlign: "center", position: relative }}>
         PRICING</div>
         <div id = "bullets" style = {{fontFamily: `serif`,fontSize:`20px`, paddingTop: `50px`, textAlign: "Left"}} >
         
@@ -24,7 +24,7 @@ const PackagesPage = () => (
           <li class = "li-bullets">Minimum 2 week registration required</li>
           <li class = "li-bullets">Veg/Non veg option available at the same price</li>
           <li class = "li-bullets">Non-Veg comes as 2 times per week</li>     
-          <li class = "li-bullets">Custom package? Please call us.</li>     
+          <li class = "li-bullets">Custom package? Please call us.  </li>     
         </ul>
         </div>
       </div>
