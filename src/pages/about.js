@@ -10,7 +10,7 @@ import { relative } from "upath"
 const AboutPage = () => (
     <Layout>
       <SEO title="About" />
-      <div id = "divAbout"  style={{ paddingRight: `15px`, paddingLeft: `15px`, marginRight: auto, marginLeft:auto, maxWidth: `800px`, marginBottom: `1.0rem`}} >
+      <div id = "divAbout"  style={{ paddingRight: `15px`, paddingLeft: `15px`, marginLeft:auto, marginRight: auto, marginLeft:auto, maxWidth: `800px`, marginBottom: `1.0rem`}} >
         <div id = "title-wrapper" color = "#fff"  style = {{fontFamily: `serif`,fontSize:`65px`, paddingTop: `140px`, textAlign: "center", position: relative }}>
         ABOUT</div>
         <div id = "caption" style = {{fontFamily: `serif`,fontSize:`20px`, paddingTop: `50px`, textAlign: "center", position: relative }} >
@@ -20,7 +20,7 @@ const AboutPage = () => (
         SouthIndianVillage is Toronto's high end premium tiffin services which prepares daily fresh home kitchen food.
         </div>
 
-        <div id = "bullets" style = {{fontFamily: `serif`,fontSize:`20px`, paddingTop: `50px`, textAlign: "Left"}} >
+        <div id = "bullets" style = {{fontFamily: `serif`,fontSize:`20px`, paddingTop: `25px`, textAlign: "Left", position : "relative"}} >
         
         <ul class = "ul-bullets">
           <li class = "li-bullets">Very unique menu in all over GTA</li>
