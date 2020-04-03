@@ -16,29 +16,29 @@ const ContactPage = () => (
         <div id = "caption" style = {{fontFamily: `serif`,fontSize:`20px`,paddingTop: `50px`,  textAlign: "center", position: relative }} >
         Let us know any concerns or feedback</div>
         <div  id= "ContactContainer" class = "parent"  style={{ margin: `0 auto`, maxWidth: `800px`, width: `100%`,
-         marginTop : `150Px` }}>
+         marginTop : `150Px` , padding: `0px` }}>
         <div class = "child" style = {{width : `50%` , float : `left`}}>
         <div id ="left-container" style = {{  position : relative, margin : `5px` }}>
-            <div style = {{borderColor: `red`, position : `relative`  ,fontFamily: `serif`, fontSize: `40px`, marginBottom: `50px`}}>
+            <div class = "contact-title-font" style = {{borderColor: `red`, position : `relative`  ,fontFamily: `serif`,
+             marginBottom: `50px`, textAlign : `center` }}>
               <span>Contact Info!</span>
             </div>
             
             <div id = "ContactInfoform" 
-             style = {{ borderColor:`red`, 
-             fontFamily: `serif`, fontsize: `20px`, position:`relative` ,
+             style = {{ fontFamily: `serif`, fontsize: `20px`, position:`relative` ,
               display: `table`, tablelayout :`relative` }} >
               <div style={{ fontFamily: `serif` }}>                
-                <div style = {{fontSize: `20px`}}>647-862-5701<br></br></div>
-                <div style = {{fontSize: `20px`}}>647-983-5701<br></br></div>
-                <div style = {{fontSize: `20px`}}>southindianvillage.ca@gmail.com<br></br></div>
+                <div >647-862-5701<br></br></div>
+                <div>647-983-5701<br></br></div>
+                <div>southindianvillage.ca@gmail.com<br></br></div>
               </div>
             </div>
           </div> 
           </div>
           <div class = "child" style = {{ width : `50%` , float : `left`}}>
           <div id ="right-container" style = {{ margin : `5px` }}>
-            <div style = {{borderColor: `red`, position : `relative`, 
-            fontFamily: `serif`, fontSize : `40px`}}>
+            <div class = "contact-title-font" style = {{borderColor: `red`, position : `relative`, 
+            fontFamily: `serif`,  textAlign: `center`}}>
             <span>Get in touch!</span>
             </div>
             <div style ={{marginTop : `20px`}}>
