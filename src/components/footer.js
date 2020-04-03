@@ -16,7 +16,7 @@ const Footer = ({ siteTitle }) => (
     </div>
     <div float = "left" style={{ margin: `0 auto`, maxWidth: 400}}>
     <div id = "phone" style = {{float:`left`}} >647-862-5701</div>
-    <div id = "phone" style = {{float:`right`}}>southindianvillage@gmail.com</div>
+    <div id = "phone" style = {{float:`right`}}>southindianvillage.ca@gmail.com</div>
 
     </div>
       

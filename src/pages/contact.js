@@ -15,10 +15,30 @@ const ContactPage = () => (
         Contact us</div>
         <div id = "caption" style = {{fontFamily: `serif`,fontSize:`20px`,paddingTop: `50px`,  textAlign: "center", position: relative }} >
         Let us know any concerns or feedback</div>
-        <div id= "ContactContainer"  style={{ margin: `0 auto`, maxWidth: 800, marginTop : `250Px`}}>
-          <div id ="left-container" style = {{display : `table-cell`, }}>
-            <div style = {{borderColor: `red`, position : `relative`, display: `table`, fontFamily: `serif`, fontSize : `40px`}}>
-              <span>Get in touch!</span>
+        <div id= "ContactContainer"  style={{ margin: `0 auto`, maxWidth: `800px`, width: `100%`, marginTop : `250Px`}}>
+        <div style = {{width : `50%` , float : `left`}}>
+        <div id ="left-container" style = {{display : `table-cell`,  position : relative, margin : `5px` }}>
+            <div style = {{borderColor: `red`, position : `relative` , display: `table` ,fontFamily: `serif`, fontSize: `40px`, marginBottom: `50px`}}>
+              <span>Contact Info!</span>
+            </div>
+            
+            <div id = "ContactInfoform" 
+             style = {{ borderColor:`red`, 
+             fontFamily: `serif`, fontsize: `20px`, position:`relative` ,
+              display: `table`, tablelayout :`relative` }} >
+              <div style={{ fontFamily: `serif` }}>                
+                <div style = {{fontSize: `20px`}}>647-862-5701<br></br></div>
+                <div style = {{fontSize: `20px`}}>647-983-5701<br></br></div>
+                <div style = {{fontSize: `20px`}}>southindianvillage.ca@gmail.com<br></br></div>
+              </div>
+            </div>
+          </div> 
+          </div>
+          <div style = {{ width : `50%` , float : `left`}}>
+          <div id ="right-container" style = {{display : `table-cell`, margin : `5px` }}>
+            <div style = {{borderColor: `red`, position : `relative`, display: `table`, 
+            fontFamily: `serif`, fontSize : `40px`}}>
+            <span>Get in touch!</span>
             </div>
             <div style ={{marginTop : `20px`}}>
             <div id = "GetInTouchform" 
@@ -60,21 +80,7 @@ const ContactPage = () => (
           </div>
           </div>
           </div>
-          <div id ="right-container" style = {{display : `table-cell`,  position : relative }}>
-            <div style = {{borderColor: `red`, position : `relative` , display: `table` ,fontFamily: `serif`, fontSize: `40px`, marginBottom: `50px`}}>
-              <span>Contact Info!</span>
-            </div>
-            
-            <div id = "ContactInfoform" 
-             style = {{ borderColor:`red`, 
-             fontFamily: `serif`, fontsize: `20px`, position:`relative` , display: `table`, tablelayout :`relative` }} >
-              <div style={{ fontFamily: `serif` }}>
-                <div style = {{fontSize: `20px`}}>647-983-5701<br></br></div>
-                <div style = {{fontSize: `20px`}}>647-862-5701<br></br></div>
-                <div style = {{fontSize: `20px`}}>southindianvillage@gmail.com<br></br></div>
-              </div>
-            </div>
-          </div>          
+        </div>   
         </div>
       </div>
       
