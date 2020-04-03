@@ -45,30 +45,31 @@ const ContactPage = () => (
             <div id = "GetInTouchform" 
             style = {{ borderColor:`red`, border:`4px solid`,
              fontFamily: `serif`, fontsize: `20px`, position:`relative`,
-              tablelayout :`relative`, padding: `25px`}} >
+              tablelayout :`relative`, padding: `5px`}} >
               <div>
               <form name = "contact" method ="post" data-netlify="true">
                 <div id = "form-group" position = "relative">
                   <div>
-                    <div id = "name" class = "contact-fields">
-                      <span>
-                        <input type ="text" name = "username" placeholder = "Name"  required = "true"/>
-                      </span>
+                    <div id = "name" >
+                      <div>
+                        <input type ="text" style = {{flex:1, width: `100%`}} name = "username" 
+                        placeholder = "Name"  required = "true" />
+                      </div>
                     </div>
                   </div>
                   <div id = "email" class = "contact-fields">
-                    <span>
-                      <input type ="text" name = "Email" placeholder = "Email" required = "true" />
-                    </span>
+                    <div>
+                      <input type ="text" style = {{width : `100%`}} name = "Email" placeholder = "Email" required = "true" />
+                    </div>
                   </div>
                   <div id = "phonenumber" class = "contact-fields">
                     <span>
-                      <input type ="text" placeholder = "phone number" name = "Phone number" required = "true" />
+                      <input type ="text" style = {{width : `100%`}} placeholder = "phone number" name = "Phone number" required = "true" />
                     </span>
                   </div>
                   <div id ="textArea" class = "contact-fields">
                     <span>
-                      <textarea name = "message" cols = "20" rows = "3" placeholder = "message" width = "100%"></textarea>
+                      <textarea name = "message" style = {{width : `100%`}} cols = "20" rows = "3" placeholder = "message"></textarea>
                     </span>
                   </div>
                   <div id = "btn-submit">
