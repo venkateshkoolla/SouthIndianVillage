@@ -128,6 +128,36 @@ a:hover {
   display: block;
 }
 
+.parent {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px;
+  /* background: #ccc; */
+  box-sizing: border-box;
+}
+
+.child {
+  max-width: 98%;
+  flex: 0 0 98%;
+  height: 100%;
+  background: #333;
+  margin: 0 1% 10px;
+}
+
+@media (min-width: 480px) {
+.child {
+  max-width: 48%;
+  flex: 0 0 48%;
+  margin-bottom: 0;
+}
+}
+
+.contact-fields{
+  overflow: auto;
+  width: 100%;
+  font-family: serif
+}
+
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;

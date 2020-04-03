@@ -15,10 +15,11 @@ const ContactPage = () => (
         Contact us</div>
         <div id = "caption" style = {{fontFamily: `serif`,fontSize:`20px`,paddingTop: `50px`,  textAlign: "center", position: relative }} >
         Let us know any concerns or feedback</div>
-        <div id= "ContactContainer"  style={{ margin: `0 auto`, maxWidth: `800px`, width: `100%`, marginTop : `250Px`}}>
-        <div style = {{width : `50%` , float : `left`}}>
-        <div id ="left-container" style = {{display : `table-cell`,  position : relative, margin : `5px` }}>
-            <div style = {{borderColor: `red`, position : `relative` , display: `table` ,fontFamily: `serif`, fontSize: `40px`, marginBottom: `50px`}}>
+        <div  id= "ContactContainer" class = "parent"  style={{ margin: `0 auto`, maxWidth: `800px`, width: `100%`,
+         marginTop : `150Px` }}>
+        <div class = "child" style = {{width : `50%` , float : `left`}}>
+        <div id ="left-container" style = {{  position : relative, margin : `5px` }}>
+            <div style = {{borderColor: `red`, position : `relative`  ,fontFamily: `serif`, fontSize: `40px`, marginBottom: `50px`}}>
               <span>Contact Info!</span>
             </div>
             
@@ -34,39 +35,40 @@ const ContactPage = () => (
             </div>
           </div> 
           </div>
-          <div style = {{ width : `50%` , float : `left`}}>
-          <div id ="right-container" style = {{display : `table-cell`, margin : `5px` }}>
-            <div style = {{borderColor: `red`, position : `relative`, display: `table`, 
+          <div class = "child" style = {{ width : `50%` , float : `left`}}>
+          <div id ="right-container" style = {{ margin : `5px` }}>
+            <div style = {{borderColor: `red`, position : `relative`, 
             fontFamily: `serif`, fontSize : `40px`}}>
             <span>Get in touch!</span>
             </div>
             <div style ={{marginTop : `20px`}}>
             <div id = "GetInTouchform" 
             style = {{ borderColor:`red`, border:`4px solid`,
-             fontFamily: `serif`, fontsize: `20px`, position:`relative` , display: `table`, tablelayout :`relative`, padding: `25px`}} >
+             fontFamily: `serif`, fontsize: `20px`, position:`relative`,
+              tablelayout :`relative`, padding: `25px`}} >
               <div>
               <form name = "contact" method ="post" data-netlify="true">
-                <div id = "form-group">
+                <div id = "form-group" position = "relative">
                   <div>
-                    <div id = "name">
+                    <div id = "name" class = "contact-fields">
                       <span>
                         <input type ="text" name = "username" placeholder = "Name"  required = "true"/>
                       </span>
                     </div>
                   </div>
-                  <div id = "email">
+                  <div id = "email" class = "contact-fields">
                     <span>
                       <input type ="text" name = "Email" placeholder = "Email" required = "true" />
                     </span>
                   </div>
-                  <div id = "phonenumber">
+                  <div id = "phonenumber" class = "contact-fields">
                     <span>
                       <input type ="text" placeholder = "phone number" name = "Phone number" required = "true" />
                     </span>
                   </div>
-                  <div id ="textArea">
+                  <div id ="textArea" class = "contact-fields">
                     <span>
-                      <textarea name = "message" cols = "20" rows = "3" placeholder = "message" width = "80%"></textarea>
+                      <textarea name = "message" cols = "20" rows = "3" placeholder = "message" width = "100%"></textarea>
                     </span>
                   </div>
                   <div id = "btn-submit">
