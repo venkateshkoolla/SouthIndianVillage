@@ -1,64 +1,48 @@
+import { Link } from "gatsby"
+import PropTypes from "prop-types"
+import Helmet from "react-helmet"
+import SEO from "../components/seo"
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import BackgroundImage from 'gatsby-background-image'
 import styled from 'styled-components'
 import { StyledFullScreenWrapper } from './SharedStyledComponents'
+import Layout from "../components/layout"
 
-// import { StyledFullScreenWrapper } from './SharedStyledComponents'
-
-const BackgroundSection = () => {
+const BackgroundHeader = ({ siteTitle }) => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "seamless-bg-desktop.jpg" }) {
+      placeholderImage: file(relativePath: { eq: "BackgroundHeader.PNG" }) {
         childImageSharp {
-          fluid(maxWidth: 800) {
+          fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
         }
       }
     }
   `)
-            return (
-              <StyledFullScreenWrapper>
-              <StyledSymetryWrapper>
-              <BackgroundImage
-                Tag="section"
-                //className={className}
-                fluid={data.placeholderImage.childImageSharp.fluid}
-                backgroundColor={`#fff`}
-              >
-                <h2>gatsby-background-image</h2>
-              </BackgroundImage>
-              </StyledSymetryWrapper>
-              <StyledSymetryWrapper>
-        {/* <StyledWelcomeImage
-          fluid={data.placeholderImage.childImageSharp.fluid}
-          backgroundColor={`#040e18`}
-          objectFit="cover"
-          objectPosition="50% 50%"
-        /> */}
-      </StyledSymetryWrapper>
-              </StyledFullScreenWrapper>
-
-            )
+  return (
+    <BackgroundImage
+      Tag="section"
+      fluid={data.placeholderImage.childImageSharp.fluid}>
+      <div class="title-font" style={{ padding: `50px 0 10px 0`, fontFamily: `myFirstFont` }}>
+        {siteTitle}
+      </div>
+      <div className="caption-font" style={{ textDecoration: ``, fontsize: `25px` }}>
+        Telugu tiffin services & catering
+        </div>
+      <div className="locations-font" style={{ marginBottom: `0px`, textDecoration: ``, fontsize: `10px` }}>
+        Mississauga - Brampton
+        </div>
+    </BackgroundImage>
+  )
 }
 
-  const StyledBackgroundSection = styled(BackgroundSection)`
+const StyledBackgroundSection = styled(BackgroundHeader)`
     width: 100%;
     background-position: bottom center;
     background-repeat: repeat-y;
     background-size: cover;
   `
-  const StyledSymetryWrapper = styled.div`
-  width: 50vw;
-  height: 100%;
-  overflow: hidden;
-  `
-
-  const StyledWelcomeImage = styled(Img)`
-  width: 100vw;
-  height: auto;
-`
-
-  export default StyledBackgroundSection
+export default StyledBackgroundSection
