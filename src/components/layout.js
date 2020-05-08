@@ -37,13 +37,15 @@ const Layout = ({ children }) => {
         <ul class = "ul-navbar">
           <li><Link to="/" >Home</Link></li>
           <li><Link to="/about/" >About</Link></li>
-          <div class="sub-nav">
+          <li><Link to="/tiffinservice/" >Tiffin services</Link></li>
+          <li><Link to="/catering/" >Catering</Link></li>
+          {/* <div class="sub-nav">
           <button class="sub-nav-btn"><Link to="/" >Menu</Link> </button>
             <div class="sub-nav-content" >
                 <Link to="/tiffinservice/">Tiffin service</Link>
                 <Link to="/catering/">Catering</Link>
             </div>
-        </div>
+        </div> */}
           <li><Link to="/packages/">Packages</Link></li>
           <li><Link to="/contact/">Contact</Link></li>
         </ul>   

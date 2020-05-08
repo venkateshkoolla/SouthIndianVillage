@@ -7,20 +7,28 @@ import Layout from "../components/layout"
 
 const Header = ({ siteTitle }) => (
   <header
-    style={{background: `#030303`,marginBottom: `1.45rem`,color: `#f5ce42`}}  >
-    <div style={{margin: `0 auto`,maxWidth: 960,padding: `1.45rem 1.0875rem`,}}>
-   
-      <h1 style={{ margin: 0, paddingLeft : `70px` }}>
-        <Link to="/" class = "title-font"  style={{fontFamily: `myFirstFont`, color: `#f5ce42`,textDecoration: `none`,
-            textAlign: `center`,
-            position : `relative`,
-            
-          }}>
+    style={{ background: `#030303`, marginBottom: `1.45rem`, color: `#f5ce42` }}  >
+    <div style={{ margin: `0 auto`, maxWidth: 960, padding: `1.45rem 1.0875rem`, paddingBottom: `10px` }}>
+
+      <div
+        style={{
+          margin: 0,
+          color: `#f5ce42`,
+          textDecoration: `none`,
+          textAlign: `center`,
+          position: `relative`,
+        }}>
+        <div class="title-font" style={{ padding: `20px`, fontFamily: `myFirstFont` }}>
           {siteTitle}
-        </Link>
-      </h1>
-      
+        </div>
+        <div className="caption-font" style={{ textDecoration: ``, fontsize: `25px` }}>
+          Telugu tiffin services & catering
+        </div>
+      </div>
     </div>
+    <div className="locations-font" style={{ marginBottom: `0px`, textDecoration: ``, fontsize: `10px` }}>
+      Mississauga - Brampton
+        </div>
   </header>
 )
 
