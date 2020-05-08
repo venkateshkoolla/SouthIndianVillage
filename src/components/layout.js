@@ -31,28 +31,28 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div style={{margin: `0 auto`, maxWidth: `800px`,  padding: `0 1.0875rem 1.45rem`, color: '#f5ce42', fontFamily: `'Merriweather Sans','sans-serif'`, fontSize: `20px` }}>
-      {/* <div > */}
-      <div className = "navbar">
-        <ul class = "ul-navbar">
-          <li><Link to="/" >Home</Link></li>
-          <li><Link to="/about/" >About</Link></li>
-          <li><Link to="/tiffinservice/" >Tiffin services</Link></li>
-          <li><Link to="/catering/" >Catering</Link></li>
-          {/* <div class="sub-nav">
+      <div style={{ margin: `0 auto`, maxWidth: `800px`, padding: `0 1.0875rem 1.45rem`, color: '#f5ce42', fontFamily: `'Merriweather Sans','sans-serif'`, fontSize: `20px` }}>
+        {/* <div > */}
+        <div className="navbar">
+          <ul class="ul-navbar">
+            <li><Link to="/" >Home</Link></li>
+            <li><Link to="/about/" >About</Link></li>
+            <li><Link to="/tiffinservice/" >Tiffin services</Link></li>
+            <li><Link to="/catering/" >Catering</Link></li>
+            {/* <div class="sub-nav">
           <button class="sub-nav-btn"><Link to="/" >Menu</Link> </button>
             <div class="sub-nav-content" >
                 <Link to="/tiffinservice/">Tiffin service</Link>
                 <Link to="/catering/">Catering</Link>
             </div>
         </div> */}
-          <li><Link to="/packages/">Packages</Link></li>
-          <li><Link to="/contact/">Contact</Link></li>
-        </ul>   
-        <main>{children}</main>       
+            <li><Link to="/packages/">Packages</Link></li>
+            <li><Link to="/contact/">Contact</Link></li>
+          </ul>
+          <main>{children}</main>
+        </div>
       </div>
-      </div>   
-<Footer siteTitle={data.site.siteMetadata.title}/>
+      <Footer siteTitle={data.site.siteMetadata.title} />
     </>
   )
 }

@@ -12,10 +12,11 @@ const Footer = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-      <div Align="left">Tiffin services</div>
+      <div Align="left">Telugu tiffin services & Catering</div>
     </div>
     <div float = "left" style={{ margin: `0 auto`, maxWidth: 400}}>
     <div id = "phone" style = {{float:`left`}} >647-862-5701</div>
+    {/* <div id = "phone" style = {{float:`left`}} >647-983-5701</div> */}
     <div id = "phone" style = {{float:`right`}}>southindianvillage.ca@gmail.com</div>
 
     </div>

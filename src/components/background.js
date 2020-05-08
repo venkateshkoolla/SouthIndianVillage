@@ -26,7 +26,7 @@ const BackgroundSection = () => {
                 Tag="section"
                 //className={className}
                 fluid={data.placeholderImage.childImageSharp.fluid}
-                backgroundColor={`#040e18`}
+                backgroundColor={`#fff`}
               >
                 <h2>gatsby-background-image</h2>
               </BackgroundImage>

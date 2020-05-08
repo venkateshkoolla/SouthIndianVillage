@@ -122,6 +122,17 @@ a:hover {
     }
 }
 
+.priciples-font {
+    font-size: 5vw;
+    text-align: center;
+}
+
+@media screen and (min-width: 900px) {
+    .priciples-font {
+        font-size: 30px;
+    }
+}
+
 .contact-title-font {
     font-size: 8vw;
     text-align: center;
@@ -176,7 +187,6 @@ a:hover {
     display: flex;
     flex-flow: row wrap;
     padding: 20px;
-    /* background: #ccc; */
     box-sizing: border-box;
 }
 
