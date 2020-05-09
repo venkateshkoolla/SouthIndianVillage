@@ -21,7 +21,10 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div style={{ maxWidth: `800px`, marginBottom: `1.45rem` }}>
-      <Image />
+      <div style = {{padding: `10px`}}>
+        <Image/>
+      </div>
+
     </div>
     <div id="our-food" class="parent" style={{
       margin: `0 auto`, maxWidth: `800px`, width: `100%`,
@@ -90,7 +93,7 @@ const IndexPage = () => (
               }} >
               <div class="priciples-font" color="#fff" style={{ fontFamily: `serif`, textAlign: "center", position: `relative` }}>
                 <div>
-                 100% eco-friendly containers
+                  100% eco-friendly containers
                 </div>
               </div>
             </div>

@@ -31,7 +31,6 @@ height: 10vh;
     top: 0;
     left: 0;
     right: 0;
-    left: 0;
   }`
 const Toggle = styled.div`
 display: none;
@@ -65,6 +64,7 @@ display: flex;
     top: 34vh;
     left: ${props => (props.open ? "-100%" : "0")};
     list-style-type: none;
+    text-align: right;
   }`
 const Hamburger = styled.div`
 background-color: #111;
@@ -127,7 +127,7 @@ const Layout = ({ children }) => {
                   {/* <button class="button-Navbar"> 🞬 </button> */}
                   <li><Link to="/" >Home</Link></li>
                   <li><Link to="/about/" >About</Link></li>
-                  <li><Link to="/tiffinservice/" >Tiffin services</Link></li>
+                  <li><Link to="/tiffinservice/" >TiffinServices</Link></li>
                   <li><Link to="/catering/" >Catering</Link></li>
                   <li><Link to="/packages/">Packages</Link></li>
                   <li><Link to="/contact/">Contact</Link></li>
