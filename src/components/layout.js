@@ -48,11 +48,13 @@ display: flex;
   justify-content: flex-start;
   align-items: center;
   background-color: #889933;
+  width: 100%;
   max-width: 100%;
   overflow: hidden;
   list-style-type: none;
+  
 
-  @media (max-width: 500px) {
+  @media (max-width: 480px) {
     flex-direction: column;
     position: fixed;
     width: 50%;
@@ -62,6 +64,7 @@ display: flex;
     transition: all 0.3s ease-in;
     top: 34vh;
     left: ${props => (props.open ? "-100%" : "0")};
+    list-style-type: none;
   }`
 const Hamburger = styled.div`
 background-color: #111;
@@ -120,7 +123,7 @@ const Layout = ({ children }) => {
             </Toggle>
             {navbarOpen ? (
               <Navbox>
-                <ul>
+                <ul style= {{width: `100%`}}>
                   {/* <button class="button-Navbar"> 🞬 </button> */}
                   <li><Link to="/" >Home</Link></li>
                   <li><Link to="/about/" >About</Link></li>
@@ -132,7 +135,7 @@ const Layout = ({ children }) => {
               </Navbox>
             ) : (
                 <Navbox open>
-                  <ul >
+                  <ul  style= {{width: `100%`}} >
                     {/* <button class="button-Navbar"> 🞬 </button> */}
                     <li><Link to="/" >Home</Link></li>
                     <li><Link to="/about/" >About</Link></li>

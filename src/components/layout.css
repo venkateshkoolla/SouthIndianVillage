@@ -818,6 +818,7 @@ ul li {
     /* padding-right: 10px; */
     /* margin-left: 100px; */
     margin: 2px;
+    list-style-type: none;
 }
 
 li>ol {
