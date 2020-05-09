@@ -4,6 +4,19 @@ html {
     -webkit-text-size-adjust: 100%;
 }
 
+/* head {
+    script src="jquery-3.4.0.min.js"></script>
+} */
+
+    
+    /* <link rel="stylesheet" href="css/navbar.css">
+    
+    <!-- here is the library link -->
+    <script src="jquery-3.4.0.min.js"></script>
+    
+    <!-- below will go our script -->
+    <script src="scripts/navbar.js"></script> */
+
 body {
     /* background-color: #889933; */
     margin: 0;
@@ -70,7 +83,7 @@ a:hover {
     color: white;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .sub-nav {
@@ -535,6 +548,7 @@ hgroup {
 }
 
 .ul-navbar {
+    display: flex;
     list-style-type: none;
     padding: 0;
     overflow: hidden;
@@ -542,6 +556,46 @@ hgroup {
     text-align: right;
     max-width: 100%;
 }
+
+@media only screen and (max-width: 500px) {
+    /*shows elements in a column*/
+    .ul-navbar{
+      flex-direction: column;
+    }
+    
+    /* deletes margin on top or bottom of the a tag*/
+    li{
+      margin: 0;
+    }
+   /* makes sure that the a tag will take the entire screen*/
+    a{
+      display: block;
+    }
+  }
+
+  .button-Navbar{
+    display: none;
+  }
+
+  @media only screen and (max-width: 500px) {
+       
+    .button-Navbar{
+     /*makes the button visible*/
+     display: block;
+     cursor: pointer;
+     align-self: flex-start;
+     /*since we are here, we can style it a little bit!*/
+     padding: 2vw;
+     font-size: 3vh;
+     background-color: #AFE0FF;
+     border: none;
+     
+     /*outline none removes the default blue border that appears anytime you click on the button*/
+     outline: none;
+     
+     cursor: pointer;
+   }
+ }
 
 .ul-bullets {
     margin: 30px;
@@ -761,8 +815,8 @@ ul li {
     margin-bottom: calc(1.45rem / 2);
     float: left;
     background-position: 100% .4em;
-    padding-right: 5px;
-    margin-left: 100px;
+    /* padding-right: 10px; */
+    /* margin-left: 100px; */
     margin: 2px;
 }
 
@@ -773,7 +827,7 @@ li>ol {
 }
 
 li>ul {
-    margin-left: 1.45rem;
+    /* margin-left: 1.45rem; */
     margin-bottom: calc(1.45rem / 2);
     margin-top: calc(1.45rem / 2);
 }
@@ -783,7 +837,7 @@ li a {
     color: white;
     text-align: center;
     padding: 16px;
-    /* text-decoration: none; */
+    text-decoration: underline;
 }
 
 blockquote *:last-child {

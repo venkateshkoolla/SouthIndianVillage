@@ -19,11 +19,6 @@ import {
 
 const IndexPage = () => (
   <Layout>
-    {/* <StyledBackgroundSection>
-  <StyledWrapper>
-  <StyledContentWrapperLeft> */}
-    {/* <StyledImageWrapper> */}
-    {/* <div class = "navbar" >  */}
     <SEO title="Home" />
     <div style={{ maxWidth: `800px`, marginBottom: `1.45rem` }}>
       <Image />
