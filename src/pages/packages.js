@@ -18,13 +18,13 @@ const PackagesPage = () => (
         <div id = "bullets" style = {{fontFamily: `serif`,fontSize:`20px`, paddingTop: `50px`, textAlign: "Left"}} >
         
         <ul class = "ul-bullets">
-          <li class = "li-bullets">Lunch and dinner only $13.75</li>
-          <li class = "li-bullets">Per week only $69</li>
-          <li class = "li-bullets">Food will be delivered 5 times per week at your door steps</li>
-          <li class = "li-bullets">Minimum 2 week registration required</li>
-          <li class = "li-bullets">Veg/Non veg option available at the same price</li>
-          <li class = "li-bullets">Non-Veg comes as 2 times per week</li>     
-          <li class = "li-bullets">Custom package? Please call us.  </li>     
+          <li class = "li-bullets">Lunch and dinner only $13.75 per day.</li>
+          <li class = "li-bullets">Weekly $69 only.</li>
+          <li class = "li-bullets">Food will be delivered 5 times per week at your door steps.</li>
+          <li class = "li-bullets">Minimum 2 week registration required.</li>
+          <li class = "li-bullets">Veg/Non veg option available at the same price.</li>
+          <li class = "li-bullets">Non-Veg comes as 2 times per week.</li>     
+          <li class = "li-bullets">Custom package? Please contact us</li>     
         </ul>
         </div>
       </div>

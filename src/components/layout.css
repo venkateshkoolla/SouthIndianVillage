@@ -599,7 +599,7 @@ hgroup {
 
 .ul-bullets {
     margin: 30px;
-    list-style-type: disc;
+    /* list-style-type: disc; */
     color: white;
     display: inline-block;
     padding: 0%;
@@ -608,11 +608,10 @@ hgroup {
 }
 
 .li-bullets {
-    float: left;
     margin-left: auto;
     position: relative;
-    /* display: inline-block; */
-    /* list-style-type: inline-block; */
+    display: inline-block;
+    list-style-type: disc;
     /* display: inline-block; */
 }
 
