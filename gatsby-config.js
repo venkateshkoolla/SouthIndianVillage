@@ -3,6 +3,7 @@ module.exports = {
     title: `South Indian Village`,
     description: `Authentic south indian tiffin services and catering in Mississauga & Brampton`,
     author: `@gatsbyjs`,
+    siteUrl: `southindianvillage.ca`
   },
   plugins: [
     `gatsby-plugin-sitemap`,
