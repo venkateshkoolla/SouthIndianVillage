@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `South Indian Village`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Authentic south indian tiffin services and catering in Mississauga & Brampton`,
     author: `@gatsbyjs`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -20,7 +21,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `SouthIndianVillage`,
-        short_name: `starter`,
+        short_name: `SouthIndianVillage`,
         start_url: `/`,
         background_color: `#f5ce42`,
         theme_color: `#f5ce42`,
