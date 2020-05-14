@@ -34,12 +34,12 @@ const images = [
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div style={{ maxWidth: `760px`, marginBottom: `1.45rem` }}>
+    <div id = "main" style={{width: `relative`, maxWidth: `760px`, marginBottom: `1.45rem` }}>
       <div>
-        <div style={{ position:`relative`,
+        {/* <div id= "submain" style={{ position:`relative`,
          width: `760px`, backgroundPosition: `center`, backgroundSize:`cover` }}>
           <Slider slides={images} />
-        </div>
+        </div> */}
         <div style={{ padding: `10px` }}>
           <Image />
         </div>

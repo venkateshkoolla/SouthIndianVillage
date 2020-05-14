@@ -9,7 +9,11 @@ import Arrow from './Arrow'
 
 const Slider = props => {
 
-    const getWidth = () => 800
+    const submainWidth = document.getElementById('submain')
+    console.log("sub main width",submainWidth);
+    console.log("www", window.getWidth);
+    const getWidth = () => window.innerWidth
+
     const [state, setState] = useState({
         activeIndex: 0,
         translate: 0,
@@ -19,33 +23,33 @@ const Slider = props => {
 
     const nextSlide = () => {
         if (activeIndex === props.slides.length - 1) {
-          return setState({
-            ...state,
-            translate: 0,
-            activeIndex: 0
-          })
+            return setState({
+                ...state,
+                translate: 0,
+                activeIndex: 0
+            })
         }
-    
+
         setState({
-          ...state,
-          activeIndex: activeIndex + 1,
-          translate: (activeIndex + 1) * getWidth()
+            ...state,
+            activeIndex: activeIndex + 1,
+            translate: (activeIndex + 1) * getWidth()
         })
-      }
-    
-      const prevSlide = () => {
+    }
+
+    const prevSlide = () => {
         if (activeIndex === 0) {
-          return setState({
-            ...state,
-            translate: (props.slides.length - 1) * getWidth(),
-            activeIndex: props.slides.length - 1
-          })
+            return setState({
+                ...state,
+                translate: (props.slides.length - 1) * getWidth(),
+                activeIndex: props.slides.length - 1
+            })
         }
-    
+
         setState({
-          ...state,
-          activeIndex: activeIndex - 1,
-          translate: (activeIndex - 1) * getWidth()
+            ...state,
+            activeIndex: activeIndex - 1,
+            translate: (activeIndex - 1) * getWidth()
         })
     }
 
@@ -54,13 +58,12 @@ const Slider = props => {
         <SliderContent
             translate={translate}
             transition={transition}
-            width={getWidth()* props.slides.length}
-            // width = "800px"
+            width={getWidth() * props.slides.length}
+        // width = "800px"
         >
-           
             {props.slides.map((slide, i) => (
-            <Slide key={slide + i} content={slide} />
-        ))}
+                <Slide key={slide + i} content={slide} />
+            ))}
         </SliderContent>
         <Arrow direction="left" handleClick={prevSlide} />
         <Arrow direction="right" handleClick={nextSlide} />
