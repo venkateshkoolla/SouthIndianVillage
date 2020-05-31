@@ -1,34 +1,16 @@
 import React from "react"
-import ReactDOM from 'react-dom'
-import { useStaticQuery, graphql } from "gatsby"
 
-import Slider from '../components/slideshow/Slider'
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import Image1 from "../components/image1"
 import Image2 from "../components/image2"
-import Slider1 from "../components/slider1"
-import Slider2 from "../components/slider2"
 import SEO from "../components/seo"
-import StyledBackgroundSection from "../components/background"
-import styled from 'styled-components'
-import { auto } from "eol"
 import { relative } from "upath"
 
 import {
-  StyledContentWrapperLeft,
   StyledImageWrapper,
-  StyledLink,
-  StyledWrapper,
 } from '../components/SharedStyledComponents'
 
-const images = [
-  'https://images.unsplash.com/photo-1449034446853-66c86144b0ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80',
-  'https://images.unsplash.com/photo-1470341223622-1019832be824?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2288&q=80',
-  'https://images.unsplash.com/photo-1448630360428-65456885c650?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2094&q=80',
-  'https://images.unsplash.com/photo-1534161308652-fdfcf10f62c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2174&q=80'
-]
 
 
 const IndexPage = () => (
@@ -132,17 +114,11 @@ const IndexPage = () => (
 )
 
 var slideIndex = 1;
-showSlides(slideIndex);
+showSlides();
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
 
-function showSlides(n) {
+function showSlides() {
   // var i;
   // var slides = document.getElementsByClassName("mySlides");
   // var dots = document.getElementsByClassName("dot");
